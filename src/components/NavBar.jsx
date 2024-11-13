@@ -1,21 +1,52 @@
 import Link from "next/link";
+import { Storefront, Sell, Person, Category, Store } from "@mui/icons-material";
 
 export default function NavBar() {
   return (
-    <nav className="container bg-indigo-600 flex justify-around h-20">
-      <img src="https://res.cloudinary.com/dnfil5isx/image/upload/v1702329778/IMG-20210509-WA0027-removebg-preview_wbkzyv.png" alt="LogoPagina" className="w-8 m-2 bg-white"/>
-      <ul className="flex justify-around w-full h-full content-center ">
-        <li className="w-2">
-          <Link href='/ventas'>Ventas</Link>
+    <nav className="bg-indigo-600 flex justify-around w-full sticky">
+      <Link
+        href="/"
+        className="flex flex-col h-full items-start justify-center rounded-full hover:bg-indigo-400 p-5 m-5"
+      >
+        <Store fontSize="large"/>
+      </Link>
+
+      <ul className="flex justify-around w-2/3 content-center m-0">
+        <li className="w-20 inline-block rounded-full hover:bg-indigo-400 p-5 m-5">
+          <Link
+            href="/ventas"
+            className="flex flex-col h-full items-center justify-center"
+          >
+            <Storefront/>
+            <p>Ventas</p>
+          </Link>
         </li>
-        <li className="w-2">
-          <Link href='/pedidos'>Pedidos</Link>
+        <li className="w-20 inline-block rounded-full hover:bg-indigo-400 p-5 m-5">
+          <Link
+            href="/pedidos"
+            className="flex flex-col h-full items-center justify-center"
+          >
+            <Sell />
+            <p>Pedidos</p>
+          </Link>
         </li>
-        <li className="w-2">
-          <Link href='/clientes'>Clientes</Link>
+        <li className="w-20 inline-block rounded-full hover:bg-indigo-400 p-5 m-5">
+          <Link
+            href="/clientes"
+            className="flex flex-col h-full items-center justify-center"
+          >
+            <Person />
+            <p>Clientes</p>
+          </Link>
         </li>
-        <li className="w-2">
-          <Link href='/productos'>Productos</Link>
+        <li className="w-20 inline-block rounded-full hover:bg-indigo-400 p-5 m-5">
+          <Link
+            href="/productos"
+            className="flex flex-col h-full items-center justify-center"
+          >
+            <Category />
+            <p>Productos</p>
+          </Link>
         </li>
       </ul>
     </nav>
