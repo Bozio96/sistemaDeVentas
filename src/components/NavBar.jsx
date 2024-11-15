@@ -3,7 +3,7 @@ import { Storefront, Sell, Person, Category, Store } from "@mui/icons-material";
 
 export default function NavBar() {
   return (
-    <nav className="bg-indigo-600 flex justify-around w-full sticky">
+    <nav className="bg-indigo-600 flex justify-around w-full">
       <Link
         href="/"
         className="flex flex-col h-full items-start justify-center rounded-full hover:bg-indigo-400 p-5 m-5"
