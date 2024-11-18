@@ -1,7 +1,7 @@
 import { AddCircleRounded } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 import Link from "next/link";
-import PedidosList from '@/components/pedidos/PedidosList'
+import List from '@/components/List'
 
 export default function Pedidos() {
   const pedidos = [
@@ -28,7 +28,7 @@ export default function Pedidos() {
     <article>
       <h1 className="text-5xl m-3">Pedidos</h1>
 
-      <PedidosList pedidos={pedidos}/>
+      <List recurso={pedidos}/>
 
       <ul className="fixed right-0 bottom-0">
         <li>

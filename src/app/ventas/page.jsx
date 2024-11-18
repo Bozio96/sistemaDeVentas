@@ -1,7 +1,7 @@
 import { AddCircleRounded } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 import Link from "next/link";
-import  VentasList  from "@/components/ventas/VentasList";
+import List from '@/components/List'  
 
 export default function Ventas() {
   const ventas = [
@@ -14,7 +14,7 @@ export default function Ventas() {
     <article>
       <h1 className="text-5xl m-3">Ventas</h1>
 
-      <VentasList ventas={ventas} />
+      <List recurso={ventas}/>
 
       <ul className="fixed right-0 bottom-0">
         <li>
