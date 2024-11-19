@@ -1,6 +1,6 @@
 const ItemList = ({ objeto, cols }) => {
   return (
-    <div className="flex flex-row m-2 justify-evenly">
+    <div className="flex flex-row m-1 justify-evenly">
       {Object.keys(objeto).map((key) => (
         <div key={key} className={`flex flex-col w-1/${cols}`}>
           <input
@@ -12,7 +12,7 @@ const ItemList = ({ objeto, cols }) => {
         </div>
       ))}
       <button
-        className={`bg-indigo-500 w-1/${cols} h-10 border-2 border-black mx-1 hover:bg-indigo-400`}
+        className={`bg-indigo-500 w-1/${cols} h-10 border-2 border-black mx-1 px-3 hover:bg-indigo-400`}
       >
         Ver
       </button>

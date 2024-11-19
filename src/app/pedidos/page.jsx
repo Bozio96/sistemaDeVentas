@@ -6,7 +6,7 @@ import List from '@/components/List'
 export default function Pedidos() {
   const pedidos = [
     {
-      num: "0001",
+      numero: "0001",
       cliente: "Juan",
       monto: 100,
       fecha: 'Navidad wacho',
@@ -15,7 +15,7 @@ export default function Pedidos() {
       ]
     },
     {
-      num: "0002",
+      numero: "0002",
       cliente: "Pedro",
       monto: 100,
       fecha: 'Mañana',
