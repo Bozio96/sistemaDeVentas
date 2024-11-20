@@ -32,7 +32,7 @@ export default function Pedidos() {
 
       <ul className="fixed right-0 bottom-0">
         <li>
-          <Link href="#">
+          <Link href="./pedidos/nuevo">
             <Tooltip title="Nuevo Pedido" arrow>
               <AddCircleRounded
                 sx={{ fontSize: 70 }}
@@ -43,6 +43,5 @@ export default function Pedidos() {
         </li>
       </ul>
     </article>
-
   )
 }

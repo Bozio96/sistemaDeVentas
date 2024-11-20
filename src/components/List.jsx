@@ -6,7 +6,9 @@ const List = ({ recurso }) => {
     const separated = pascalCase.replace(/([A-Z])/g, " $1").trim();
     return separated;
   }
-  const cols = 6
+  const cols = 6 
+  /* Esto está hardcodeado, mejorar la logica para que aplique el tamaño dependiendo de los atributos
+   Usar Object.keys(recurso[0]).length....No existe w-1/7*/
   const titles = Object.keys(recurso[0]);
   const newTitles = titles.map(camelToPascalandSeparate);
 

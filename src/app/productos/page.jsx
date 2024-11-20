@@ -99,7 +99,7 @@ export default function Productos() {
 
       <ul className="fixed right-0 bottom-0">
         <li>
-          <Link href="#">
+          <Link href="./productos/nuevo">
             <Tooltip title="Nuevo Producto" arrow>
               <AddCircleRounded
                 sx={{ fontSize: 70 }}

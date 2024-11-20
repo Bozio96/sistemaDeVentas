@@ -13,7 +13,7 @@ const ItemList = ({ objeto, cols }) => {
       ))}
       <button
         className={`bg-indigo-500 w-1/${cols} h-10 border-2 border-black mx-1 px-3 hover:bg-indigo-400`}
-      >
+      > {/*Redirije a un formulario editable de "objeto"*/}
         Ver
       </button>
     </div>

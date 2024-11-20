@@ -36,7 +36,8 @@ export default function Ventas() {
 
       <ul className="fixed right-0 bottom-0">
         <li>
-          <Link href="#">
+          <Link href="./ventas/nuevo">
+            {" "}
             <Tooltip title="Nueva Venta" arrow>
               <AddCircleRounded
                 sx={{ fontSize: 70 }}

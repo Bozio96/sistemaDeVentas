@@ -1,7 +1,7 @@
 import { AddCircleRounded } from "@mui/icons-material";
 import { Tooltip } from "@mui/material";
 import Link from "next/link";
-import List from '@/components/List'
+import List from "@/components/List";
 
 export default function Clientes() {
   const clientes = [
@@ -12,7 +12,7 @@ export default function Clientes() {
       apellido: "Bozio",
       dni: "12321321",
       telefono: "3402486731",
-      mail: "rodrigobozio96@gmail.com",
+      email: "rodrigobozio96@gmail.com",
     },
     {
       id: "310ifi1093j0f",
@@ -21,7 +21,7 @@ export default function Clientes() {
       apellido: "Joven",
       dni: "12321322",
       telefono: "3411414123",
-      mail: "toto@toto.com",
+      email: "toto@toto.com",
     },
     {
       id: "1039ur109r1",
@@ -30,24 +30,26 @@ export default function Clientes() {
       apellido: "Viejo",
       dni: "12321333",
       telefono: "3460690987",
-      mail: "hugo@hugo.com",
-    }
-  ]
+      email: "hugo@hugo.com",
+    },
+  ];
 
-  const clientesNuevoFormato = clientes.map(({id, nombre, apellido, ...rest}) => ({
-    nombreCompleto: `${nombre} ${apellido}`,    
-    ...rest,
-    }))
+  const clientesNuevoFormato = clientes.map(
+    ({ id, nombre, apellido, ...rest }) => ({
+      nombreCompleto: `${nombre} ${apellido}`,
+      ...rest,
+    })
+  );
 
   return (
     <article>
       <h1 className="text-5xl m-3">Clientes</h1>
 
-      <List recurso={clientesNuevoFormato}/>
+      <List recurso={clientesNuevoFormato} />
 
       <ul className="fixed right-0 bottom-0">
         <li>
-          <Link href="#">
+          <Link href="./clientes/nuevo">
             <Tooltip title="Nuevo Cliente" arrow>
               <AddCircleRounded
                 sx={{ fontSize: 70 }}
@@ -58,6 +60,5 @@ export default function Clientes() {
         </li>
       </ul>
     </article>
-
-  )
+  );
 }
